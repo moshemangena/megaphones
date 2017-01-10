@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<title>Mega&lt;phones - Smartphones</title>
+
+<link rel="shortcut icon" href="img/favicon.png" />
+<link rel="stylesheet" type="text/css" href="css/default-style.css">
+<link rel="stylesheet" type="text/css" href="css/media.css">
+
+<link rel="stylesheet" type="text/css" href="js/engine1/style.css" />
+<script type="text/javascript" src="js/engine1/jquery.js"></script>
+    
+<script src="js/jquery-1.11.1.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#nav-mobile").html($("#nav-main").html());
+		$("#nav-trigger span").click(function(){
+       		if ($("nav#nav-mobile ul").hasClass("expanded")) {
+           		$("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(350);
+            	$(this).removeClass("open");
+        		} else {
+           			$("nav#nav-mobile ul").addClass("expanded").slideDown(350);
+            		$(this).addClass("open");
+ 			}
+		});//menu drop down end
+	
+	//http://callmenick.com/	
+	$("ul#tabs li").click(function(e){
+  		if (!$(this).hasClass("active")) {
+       		var tabNum = $(this).index();
+            var nthChild = tabNum+1;
+            $("ul#tabs li.active").removeClass("active");
+            $(this).addClass("active");
+            $("ul#tab li.active").removeClass("active");
+            $("ul#tab li:nth-child("+nthChild+")").addClass("active");
+        }
+    });//tab end
+			
+});//doc end
+</script>
+
+</head>
+
+<body>
+<!--header start-->
+<header class="header">
+	<!--wrap start-->
+	<div class="wrap">
+
+		<nav class="top-nav">
+        	<ul>
+            	<li><a href="#">ABOUT US</a></li>
+                <li><a href="#">DELIVERY</a></li>
+                <li><a href="#">FAQS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul><!--ul end-->
+        </nav><!--nav end-->
+
+		<!--logo start-->
+        <div class="logo">
+        <a href="index.html" class="data-line"><div data-line="MGP"></div></a>
+        	<h1><a href="index.html">MEGA<span><img src="img/mega.png" width="29" height="38" alt="&lt;"></span>PHONES</a></h1>
+        </div>
+        <div class="clear"></div><!--logo end-->
+
+	  <!--search start-->
+		<div class="search-form">
+            <form>
+                <input type="search" placeholder="search...">
+                <input type="search" class="mob-input">
+            </form>
+        </div>
+        <div class="clear"></div><!--search end-->
+	
+    	 <!--menu start-->
+    	<nav class="main-nav" id="nav-main">
+        	<ul>
+            	<li><a href="smarts.html">Smartphones</a></li>
+                <li><a href="mobile.html">Mobile Phones</a></li>
+                <li class="active"><a href="#">Tablets</a></li>
+                <li class="last"><a href="upgrades.html">Upgrades</a></li>
+            </ul>  <!--ul end-->  	
+        </nav><!--nav end-->
+        <div id="nav-trigger">
+    			<span><img src="img/menu.png" width="40" height="30" alt="menu"></span>
+		</div><!--trigger end end-->
+        <nav id="nav-mobile"></nav>
+        <div class="clear"></div>
+        
+        
+  </div><!--//wrap end-->
+</header><!--//header end-->
+
+<!--//slider-->
+
+<section>
+<div class="page-bg">
+	<div class="wrap">
+    
+		<div class="page">
+    		<aside class="m-right float_L">
+            	<h2>catalog</h2>
+                
+                <h5>Type</h5>
+              	<ul>
+                	<li><input type="checkbox" value=""> Smartphones</li>
+                    <li><input name="" type="checkbox" value=""> Mobile</li>
+                    <li><input name="" type="checkbox" value=""> Tablets</li>
+                </ul>
+                
+                <hr>
+                
+                <h5>Manufacturer</h5>
+                <ul>
+                	<li><input type="checkbox" value=""> Nokia</li>
+                    <li><input name="" type="checkbox" value=""> HTC</li>
+                    <li><input name="" type="checkbox" value=""> Apple</li>
+                    <li><input name="" type="checkbox" value=""> Samgsung</li>
+                </ul>
+   
+            </aside>       
+            
+            <hr>
+            <article class="article-page">
+            
+            	<h2>Tablets</h2>
+                <p>&nbsp;</p>  
+           	  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            
+            
+            
+            <div class="sort-select">
+           	  Sort by:
+            	<select name="" size="1">
+            	  <option value="--">--</option>
+                  
+                  <option>Price: Low first</option>
+                  <option>Price: High first</option>
+                  
+                  <option>Name: A - Z</option>
+                  <option>Name: Z - A</option>
+                  
+                  <option>In Stock</option>
+                </select>
+            </div><!--sort end-->
+            
+            <hr>
+            
+            <p>Items 7 of 7</p>
+            <p>&nbsp;</p>
+            <ul class="item-list">
+          		<li>            
+                    <div class="list-content m-right">
+                        <a href="tablet/ipad.html"><img name="" src="img/tablets/img_01.jpg" alt="Apple iPhone 6"></a>
+                        <h2>&pound;239</h2>
+                        <p>Apple iPad Air</p>
+                        <p><a href="#" class="button">Add to cart</a></p>
+                    </div><!--//content list end-->           
+            	</li><!--list end-->
+                
+                
+                <li>            
+                    <div class="list-content m-right">
+                        <a href="tablet/ipad-2.html"><img name="" src="img/tablets/img_02.jpg" alt="Apple iPhone 6"></a>
+                        <h2>&pound;339</h2>
+                        <p>Apple iPad Air 2</p>
+                        <p><a href="#" class="button">Add to cart</a></p>
+                    </div><!--//content list end-->           
+            	</li><!--list end-->
+                
+                
+                <li> <!--           
+                    <div class="list-content m-right">
+                        <a href="#"><img name="" src="img/smarts/img_01.jpg" alt="Apple iPhone 6"></a>
+                        <h2>&pound;159</h2>
+                        <p>Apple iPhone 6 128GB max</p>
+                        <p><a href="#" class="button">Add to cart</a></p>
+                    </div><!--//content list end-->           
+            	</li><!--list end-->
+                
+                <li>    <!--        
+                    <div class="list-content m-right">
+                        <a href="#"><img name="" src="img/smarts/img_01.jpg" alt="Apple iPhone 6"></a>
+                        <h2>&pound;129</h2>
+                        <p>Apple iPhone 6 128GB max</p>
+                        <p><a href="#" class="button">Add to cart</a></p>
+                    </div><!--//content list end-->           
+            	</li><!--list end-->
+                
+            </ul><!-- unordered list end-->
+            	                	
+          </article><!--article end-->
+            <div class="clear"></div>
+    	</div><!--//page end-->
+        
+    </div><!--//wrap end-->
+</div><!--//page-bg end-->
+</section><!--//section end-->
+
+
+<!--//foot-->
+
+<footer class="footer">
+	<div class="wrap">
+        <div class="address">
+            <h2>Store Info</h2>
+            <p>MEGAPHONES <br> 3001 CHAMBER LANE<br>
+            SCOTLAND, GLASGOW, G1 1</p>
+        </div><!--//address end-->
+        
+        
+        
+   		<div class="info">
+        	EMAIL: <a href="mailto:help@megaphones.com">HELP@MEGAPHONES.COM</a> <br>
+            CALL: 0800-6342-746
+        </div><!--//info end-->
+             
+             
+    	<div class="news-form"> 
+      	<form action="#" method="get">
+            	<input name="email" class="email" type="text" required pattern="[^ @]*@[^ @]*" placeholder="Newsletter... email@me.com">
+                <input name="" class="sub-btn" type="image" src="img/submit.png">
+       	</form>
+        </div>
+                  
+        <div class="clear"></div>
+        
+      <div class="copy"> <hr>
+   	    &copy; 2015 <a href="index.html">Megaphones.com</a> </div>
+        
+    </div><!--//wrap end-->
+</footer><!--//footer end-->
+
+</body>
+</html>

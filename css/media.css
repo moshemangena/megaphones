@@ -1,0 +1,93 @@
+/*@media screen Ipade potrait*/
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+.slider .wrap{width: 100%;}
+
+.wrap {width: 95%;}
+
+input[type=search] {display: none;}
+
+.mob-input[type=search] {display: block;}
+
+#nav-trigger {display: block; }
+
+nav#nav-main { display: none; }
+
+nav#nav-mobile {display: block; }
+
+ul#tab li .list-content {width: 45.7%;}
+
+ul.item-list .list-content {width: 45%;}
+
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 480px) {
+/* Styles */
+
+.slider .wrap{width: 100%;}
+
+.wrap {width: 100%;}
+
+nav.top-nav {display: none;}
+
+#nav-trigger {display: block; }
+
+nav#nav-main {display: none; }
+
+nav#nav-mobile {display: block;}
+	
+input[type=search] {display: none;}
+
+.mob-input[type=search] {display: block;}
+
+
+div.logo h1 {display: none;}
+div[data-line]:after {
+	content: attr(data-line);
+	font-size: 40px;
+	color: #f9f9f9;
+	font: 60px "sketch_blockbold";
+	transition-duration:1s;
+}div.logo span {display: none;}
+
+nav.main-nav {display: none;}
+ul#tab li .list-content {width: 96%;}
+
+.article-page {width: 100%;}
+
+ul.item-list .list-content {width: 95%;}
+
+.footer .address, .info, .copy {
+	float: none;
+	border: none;
+	text-align: center;
+}
+
+.page aside {display: none;}
+
+.single-info p{
+	display: none;
+}
+.single-img {
+	float: none;
+	width: 100%;
+}
+.single-img img {width: 100%;}
+.purchase {
+	clear: both;
+	width:100%;
+	margin-top: 30px;
+}
+table {width:100%;}
+
+.check-up, .upgrade-now {
+	width: 100%;
+	padding: 40px 0;
+}
+
+}

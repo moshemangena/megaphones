@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<title>Mega&lt;phones - Contact</title>
+
+<link rel="shortcut icon" href="img/favicon.png" />
+<link rel="stylesheet" type="text/css" href="css/default-style.css">
+<link rel="stylesheet" type="text/css" href="css/media.css">
+
+<link rel="stylesheet" type="text/css" href="js/engine1/style.css" />
+<script type="text/javascript" src="js/engine1/jquery.js"></script>
+    
+<script src="js/jquery-1.11.1.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#nav-mobile").html($("#nav-main").html());
+		$("#nav-trigger span").click(function(){
+       		if ($("nav#nav-mobile ul").hasClass("expanded")) {
+           		$("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(350);
+            	$(this).removeClass("open");
+        		} else {
+           			$("nav#nav-mobile ul").addClass("expanded").slideDown(350);
+            		$(this).addClass("open");
+ 			}
+		});//menu drop down end
+	
+	//http://callmenick.com/	
+	$("ul#tabs li").click(function(e){
+  		if (!$(this).hasClass("active")) {
+       		var tabNum = $(this).index();
+            var nthChild = tabNum+1;
+            $("ul#tabs li.active").removeClass("active");
+            $(this).addClass("active");
+            $("ul#tab li.active").removeClass("active");
+            $("ul#tab li:nth-child("+nthChild+")").addClass("active");
+        }
+    });//tab end
+			
+});//doc end
+</script>
+
+</head>
+
+<body>
+<!--header start-->
+<header class="header">
+	<!--wrap start-->
+	<div class="wrap">
+
+		<nav class="top-nav">
+        	<ul>
+            	<li><a href="#">ABOUT US</a></li>
+                <li><a href="#">DELIVERY</a></li>
+                <li><a href="#">FAQS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul><!--ul end-->
+        </nav><!--nav end-->
+
+		<!--logo start-->
+        <div class="logo">
+        <a href="index.html" class="data-line"><div data-line="MGP"></div></a>
+        	<h1><a href="index.html">MEGA<span><img src="img/mega.png" width="29" height="38" alt="&lt;"></span>PHONES</a></h1>
+        </div>
+        <div class="clear"></div><!--logo end-->
+
+	  <!--search start-->
+		<div class="search-form">
+            <form>
+                <input type="search" placeholder="search...">
+                <input type="search" class="mob-input">
+            </form>
+        </div>
+        <div class="clear"></div><!--search end-->
+	
+    	 <!--menu start-->
+    	<nav class="main-nav" id="nav-main">
+        	<ul>
+            	<li><a href="smarts.html">Smartphones</a></li>
+                <li><a href="mobile.html">Mobile Phones</a></li>
+                <li><a href="tablets.html">Tablets</a></li>
+                <li class="last"><a href="upgrades.html">Upgrades</a></li>
+            </ul>  <!--ul end-->  	
+        </nav><!--nav end-->
+        <div id="nav-trigger">
+    			<span><img src="img/menu.png" width="40" height="30" alt="menu"></span>
+		</div><!--trigger end end-->
+        <nav id="nav-mobile"></nav>
+        <div class="clear"></div>
+        
+        
+  </div><!--//wrap end-->
+</header><!--//header end-->
+
+<!--//slider-->
+
+<section>
+<div class="page-bg">
+	<div class="wrap">    
+		<div class="page">
+        	<hr>
+		  	<div class="single">
+
+            <div class="contact-form">
+            	<div class="contact-to">
+                	<h2>SEND A MESSAGE</h2>         
+            		<form method="post">     
+                        <input type="text" name="your-name" class="input" placeholder="Name..." />
+                        <input type="email" name="your-email" class="input" placeholder="Email..." />
+                        <input type="text" name="your-subject" class="input" value="" placeholder="Subject..." />
+                        <textarea name="your-message" class="textarea" placeholder="Message..."></textarea>
+                        <input type="submit" value="Send" class="submit" />
+            		</form>
+            	</div>
+            </div>
+            <!--//contact form end-->
+                
+                
+                
+                
+                
+                
+            </div><!--single end-->
+            
+          	<div class="clear"></div>  	           
+   	  </div><!--//page end-->        
+    </div><!--//wrap end-->
+</div><!--//page-bg end-->
+</section><!--//section end-->
+
+
+<!--//foot-->
+
+<footer class="footer">
+	<div class="wrap">
+        <div class="address">
+            <h2>Store Info</h2>
+            <p>MEGAPHONES <br> 3001 CHAMBER LANE<br>
+            SCOTLAND, GLASGOW, G1 1</p>
+        </div><!--//address end-->
+        
+        
+        
+   		<div class="info">
+        	EMAIL: <a href="mailto:help@megaphones.com">HELP@MEGAPHONES.COM</a> <br>
+            CALL: 0800-6342-746
+        </div><!--//info end-->
+             
+             
+    	<div class="news-form"> 
+      	<form action="#" method="get">
+            	<input name="email" class="email" type="text" required pattern="[^ @]*@[^ @]*" placeholder="Newsletter... email@me.com">
+                <input name="" class="sub-btn" type="image" src="img/submit.png">
+       	</form>
+        </div>
+                  
+        <div class="clear"></div>
+        
+      <div class="copy"> <hr>
+   	    &copy; 2015 <a href="index.html">Megaphones.com</a> </div>
+        
+    </div><!--//wrap end-->
+</footer><!--//footer end-->
+
+</body>
+</html>

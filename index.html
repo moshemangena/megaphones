@@ -1,0 +1,279 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<title>Mega&lt;phones</title>
+
+<link rel="shortcut icon" href="img/favicon.png" />
+<link rel="stylesheet" type="text/css" href="css/default-style.css">
+<link rel="stylesheet" type="text/css" href="css/media.css">
+
+<link rel="stylesheet" type="text/css" href="js/engine1/style.css" />
+<script type="text/javascript" src="js/engine1/jquery.js"></script>
+    
+<script src="js/jquery-1.11.1.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#nav-mobile").html($("#nav-main").html());
+		$("#nav-trigger span").click(function(){
+       		if ($("nav#nav-mobile ul").hasClass("expanded")) {
+           		$("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(350);
+            	$(this).removeClass("open");
+        		} else {
+           			$("nav#nav-mobile ul").addClass("expanded").slideDown(350);
+            		$(this).addClass("open");
+ 			}
+		});//menu drop down end
+	
+	//http://callmenick.com/	
+	$("ul#tabs li").click(function(e){
+  		if (!$(this).hasClass("active")) {
+       		var tabNum = $(this).index();
+            var nthChild = tabNum+1;
+            $("ul#tabs li.active").removeClass("active");
+            $(this).addClass("active");
+            $("ul#tab li.active").removeClass("active");
+            $("ul#tab li:nth-child("+nthChild+")").addClass("active");
+        }
+    });//tab end
+			
+});//doc end
+
+</script>
+
+</head>
+
+<body>
+<!--header start-->
+<header class="header">
+	<!--wrap start-->
+	<div class="wrap">
+
+		<nav class="top-nav">
+        	<ul>
+            	<li><a href="#">ABOUT US</a></li>
+                <li><a href="#">DELIVERY</a></li>
+                <li><a href="#">FAQS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul><!--ul end-->
+        </nav><!--nav end-->
+
+		<!--logo start-->
+        <div class="logo">
+        <a href="index.html" class="data-line"><div data-line="MGP"></div></a>
+        	<h1><a href="index.html">MEGA<span><img src="img/mega.png" width="29" height="38" alt="&lt;"></span>PHONES</a></h1>
+        </div>
+        <div class="clear"></div><!--logo end-->
+
+	  <!--search start-->
+		<div class="search-form">
+            <form>
+                <input type="search" placeholder="search...">
+                <input type="search" class="mob-input">
+            </form>
+        </div>
+        <div class="clear"></div><!--search end-->
+	
+    	 <!--menu start-->
+    	<nav class="main-nav" id="nav-main">
+        	<ul>
+            	<li><a href="smarts.html">Smartphones</a></li>
+                <li><a href="mobile.html">Mobile Phones</a></li>
+                <li><a href="tablets.html">Tablets</a></li>
+                <li class="last"><a href="upgrades.html">Upgrades</a></li>
+            </ul>  <!--ul end-->  	
+        </nav><!--nav end-->
+        <div id="nav-trigger">
+    			<span><img src="img/menu.png" width="40" height="30" alt="menu"></span>
+		</div><!--trigger end end-->
+        <nav id="nav-mobile"></nav>
+        <div class="clear"></div>
+        
+        
+  </div><!--//wrap end-->
+</header><!--//header end-->
+
+<!--//slider-->
+
+<section>
+	<article class="slider">
+		<div class="wrap">
+			
+        	<div id="wowslider-container1">
+            <div class="ws_images">
+                <ul>
+                    <li><a href="#"><img src="img/data1/images/1.jpg" alt="1" title="1" id="wows1_0"/></a></li>
+                    <li><img src="img/data1/images/2.jpg" alt="2" title="2" id="wows1_1"/></li>
+                    <li><img src="img/data1/images/3.jpg" alt="3" title="3" id="wows1_2"/></li>
+                </ul>
+            </div><!--WP IMAGES END-->
+            
+			<div class="ws_bullets"><div>  
+             	<a href="#" title="1"><img src="img/data1/tooltips/1.jpg" alt="1"/>1</a>
+                <a href="#" title="2"><img src="img/data1/tooltips/2.jpg" alt="2"/>2</a>
+                <a href="#" title="3"><img src="img/data1/tooltips/3.jpg" alt="3"/>3</a>
+			</div>
+            </div>
+                <span class="wsl"><a href="http://wowslider.com/vu">image carousel</a> by WOWSlider.com v7.2</span>
+				<div class="ws_shadow"></div>
+			</div><!--WOW SLIDER END-->	
+            
+			<script type="text/javascript" src="js/engine1/wowslider.js"></script>
+			<script type="text/javascript" src="js/engine1/script.js"></script>
+    
+  		</div><!--//wrap end-->
+	</article><!--//article end-->
+</section><!--//section end-->
+
+
+<!--//body-->
+
+<section class="content">
+	<div class="wrap">
+    
+ 		<div id="tab-content">
+      		<ul id="tabs">
+          		<li class="active">New Arrivals</li>
+            	<li>Offers</li>
+                
+                <div class="clear"></div>
+       		</ul><!--//tabs list end-->
+           
+			<ul id="tab">
+            
+                    <li class="active">
+                    	
+                    	<div class="list-content m-right">
+                            <a href="smartphones/iphone-6.html"><img name="" src="img/smarts/img_01.png" alt="Apple iPhone 6"></a>
+                            <h2>&pound;539</h2>
+    
+                            <p>Apple iPhone 6 64GB max</p>
+                            <p>4.7 Inch Black</p>
+                            
+                            <p><a href="#" class="button">Add to cart</a></p>
+                       </div><!--//content list end-->
+                       
+                       <div class="list-content m-right">
+                            <a href="smartphones/iphone-6-plus.html"><img name="" src="img/smarts/img_02.png" alt="Apple iPhone 6 Plus 16GB"></a>
+                            <h2>&pound;599</h2>
+    
+                            <p>Apple iPhone 6 Plus 128GB max</p>
+                            <p>5.5 Inch White Gold</p>
+                            
+                            <p><a href="#" class="button">Add to cart</a></p>
+                       </div><!--//content list end-->
+                       
+                       <div class="list-content m-right">
+                            <a href="smartphones/galaxy-s5.html"><img name="" src="img/smarts/img_03.png" alt="Samsung Galaxy S5"></a>
+                            <h2>&pound;519.95</h2>
+    
+                            <p>Samsung Galaxy S5</p>
+                            
+                            <p><a href="#" class="button">Add to cart</a></p>
+                       </div><!--//content list end-->
+                       
+                       <div class="list-content">
+                            <a href="smartphones/galaxy-note-4.html"><img name="" src="img/smarts/img_04.png" alt="Samsung Galaxy Note 4"></a>
+                            <h2>&pound;649.95</h2>
+    
+                            <p>Samsung Galaxy Note 4</p>
+                            
+                            <p><a href="#" class="button">Add to cart</a></p>
+                       </div><!--//content list end-->
+                       
+                       
+                       <!--split containers-->
+                       <div class="clear"></div>
+                       
+                       
+					   <div class="list-content m-right">
+                            <a href="smartphones/htc-one.html"><img name="" src="img/smarts/img_05.png" alt="HTC One"></a>
+                            <h2>&pound;399.95</h2>
+    
+                            <p>HTC One 32GB - 2GB RAM</p>
+                            
+                            <p><a href="#" class="button">Add to cart</a></p>
+                       </div><!--//content list end-->
+					   
+					   <div class="list-content m-right">
+                            <a href="smartphones/htc-one-m8.html"><img name="" src="img/smarts/img_06.png" alt="HTC One M8"/></a>
+                            <h2>&pound;499.95</h2>
+    
+                            <p>HTC One M8 - MicroSD up to 128GB</p>
+                            
+                            <p><a href="#" class="button">Add to cart</a></p>
+                       </div><!--//content list end-->
+					   
+                       <!--
+					   <div class="list-content m-right">
+                            <a href="#"><img name="" src="img/smarts/img_07.png" alt="Nokia Lumia 635"></a>
+                            <h2>&pound;149.95</h2>
+    
+                            <p>Nokia Lumia 635 8GB</p>
+                            
+                            <p><a href="#" class="button">Add to cart</a></p>
+                       </div><!--//content list end-->
+					   
+                        <div class="clear"></div> 
+                    </li><!--//active tab list end-->
+					
+                    
+                    
+                    
+                    
+                    
+                    <!--offers-->
+                    <li>
+                    	<div class="list-content m-right">
+                            <a href="smartphones/galaxy-alpha.html"><img name="" src="img/smarts/img_08.png" alt="samsung"></a>
+                            <h2>&pound;329.95 <span>&pound;479.95</span></h2>
+                            
+                            <p>Samsung Galaxy Alpha</p>
+                            
+                            <p><a href="#" class="button">Add to cart</a></p>
+                        </div><!--//content list end-->
+						
+                    </li><!--//tab list end-->   
+           	
+            </ul><!--//tab ul-->      
+            <div class="clear"></div>    
+		</div><!--//tab-content end-->
+    	
+        
+    </div><!--//wrap end-->
+</section><!--//section end-->
+
+<footer class="footer">
+	<div class="wrap">
+        <div class="address">
+            <h2>Store Info</h2>
+            <p>MEGAPHONES <br> 3001 CHAMBER LANE<br>
+            SCOTLAND, GLASGOW, G1 1</p>
+        </div><!--//address end-->
+        
+        
+        
+   		<div class="info">
+        	EMAIL: <a href="mailto:help@megaphones.com">HELP@MEGAPHONES.COM</a> <br>
+            CALL: 0800-6342-746
+        </div><!--//info end-->
+     	
+       <div class="news-form"> 
+      	<form action="#" method="get">
+            	<input name="email" class="email" type="text" required pattern="[^ @]*@[^ @]*" placeholder="Newsletter... email@me.com">
+                <input name="" class="sub-btn" type="image" src="img/submit.png">
+       	</form>
+        </div>
+            
+            
+        <div class="clear"></div>
+        
+      <div class="copy"> <hr>
+   	    &copy; 2015 <a href="index.html">Megaphones.com</a> </div>
+        
+    </div><!--//wrap end-->
+</footer><!--//footer end-->
+
+</body>
+</html>
